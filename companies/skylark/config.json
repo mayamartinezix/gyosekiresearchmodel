@@ -1,0 +1,72 @@
+{
+  "company": "Skylark Holdings (3197)",
+  "unit": "million yen",
+  "profit_label": "operating profit",
+  "guidance": {
+    "revenue": 500000,
+    "profit": 35000,
+    "net_income": 20500
+  },
+  "fx": {},
+  "segments": [
+    {
+      "name": "Restaurants (Japan + overseas)",
+      "revenue_base": 457794,
+      "demand_beta": 0.5,
+      "volume_growth": {
+        "mean": 0.0422,
+        "sd": 0.02
+      },
+      "price_growth": {
+        "mean": 0.048,
+        "sd": 0.012
+      },
+      "margin": {
+        "mean": 0.07,
+        "sd": 0.006
+      }
+    }
+  ],
+  "fixed_items": [],
+  "non_operating": {
+    "mean": -5000,
+    "sd": 800
+  },
+  "one_offs": [],
+  "tax_rate": {
+    "mean": 0.32,
+    "sd": 0.02
+  },
+  "minority_share": {
+    "mean": 0.0,
+    "sd": 0.0
+  },
+  "stress_tests": [
+    {
+      "name": "Weaker traffic (-3pt volume)",
+      "shifts": {
+        "all_growth": -0.03
+      }
+    },
+    {
+      "name": "Cost squeeze (-1.5pt margin)",
+      "shifts": {
+        "all_margin": -0.015
+      }
+    },
+    {
+      "name": "Price rises not accepted (-2pt)",
+      "shifts": {
+        "all_price": -0.02
+      }
+    },
+    {
+      "name": "Downturn: traffic -3pt AND margin -1pt",
+      "shifts": {
+        "all_growth": -0.03,
+        "all_margin": -0.01
+      }
+    }
+  ],
+  "notes": "STARTER. Based on FY2025 actuals and the REVISED FY2026 guidance (Aug 13, 2026). Price growth ~ average ticket +4.8%; volume = stores/traffic/acquisitions. Tax rate is an ASSUMPTION calibrated to guided net income. Guidance was raised once already this year."
+}

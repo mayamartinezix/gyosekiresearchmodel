@@ -1,0 +1,109 @@
+{
+  "company": "Sapporo Holdings (2501)",
+  "unit": "million yen",
+  "profit_label": "core operating profit",
+  "guidance": {
+    "revenue": 505000,
+    "profit": 22000,
+    "net_income": 296000
+  },
+  "fx": {},
+  "segments": [
+    {
+      "name": "Domestic (alcohol, food & soft drinks)",
+      "revenue_base": 375100,
+      "demand_beta": 0.5,
+      "volume_growth": {
+        "mean": -0.035,
+        "sd": 0.03
+      },
+      "price_growth": {
+        "mean": 0.005,
+        "sd": 0.01
+      },
+      "margin": {
+        "mean": 0.0588,
+        "sd": 0.006
+      }
+    },
+    {
+      "name": "Overseas (North America, Asia)",
+      "revenue_base": 131800,
+      "demand_beta": 0.5,
+      "volume_growth": {
+        "mean": 0.04,
+        "sd": 0.05
+      },
+      "price_growth": {
+        "mean": 0.028,
+        "sd": 0.02
+      },
+      "margin": {
+        "mean": 0.0028,
+        "sd": 0.015
+      }
+    }
+  ],
+  "fixed_items": [],
+  "non_operating": {
+    "mean": -2000,
+    "sd": 1200
+  },
+  "one_offs": [
+    {
+      "name": "Structural reform & impairment costs",
+      "prob": 1.0,
+      "mean": -16000,
+      "sd": 4000,
+      "stage": "pre_tax"
+    },
+    {
+      "name": "Real estate control-loss gain (after tax)",
+      "prob": 0.95,
+      "mean": 293000,
+      "sd": 4000,
+      "stage": "after_tax"
+    }
+  ],
+  "tax_rate": {
+    "mean": 0.35,
+    "sd": 0.1
+  },
+  "minority_share": {
+    "mean": 0.0,
+    "sd": 0.0
+  },
+  "stress_tests": [
+    {
+      "name": "Reform costs double",
+      "shifts": {
+        "oneoff_scale": {
+          "Structural reform & impairment costs": 2.0
+        }
+      }
+    },
+    {
+      "name": "Domestic beer volume -3pt",
+      "shifts": {
+        "growth": {
+          "Domestic (alcohol, food & soft drinks)": -0.03
+        }
+      }
+    },
+    {
+      "name": "Margin squeeze (-1pt)",
+      "shifts": {
+        "all_margin": -0.01
+      }
+    },
+    {
+      "name": "Real estate gain not booked",
+      "shifts": {
+        "oneoff_prob": {
+          "Real estate control-loss gain (after tax)": 0.0
+        }
+      }
+    }
+  ],
+  "notes": "STARTER with ESTIMATES. Sapporo now reports Real Estate as discontinued; FY2025 revenue 506.9bn is restated. The split between Domestic and Overseas (about 74/26) is an ESTIMATE from Q1 2026 (overseas 28.5bn of 109.0bn) - replace with the segment note. 'profit' here is CORE operating profit (guided 22.0bn); reported operating profit is guided at 6.0bn after one-offs. Net income is dominated by the real estate gain (H1 net income already 295.4bn); the model treats that gain as almost certain. Tax rate is an ASSUMPTION."
+}

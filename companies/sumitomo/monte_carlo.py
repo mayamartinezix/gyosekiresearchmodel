@@ -1,13 +1,13 @@
 """Simple Monte Carlo for Sumitomo Forestry. Pure Python, no installs.
 Run: python3 monte_carlo.py
 All numbers in assumptions.csv are PLACEHOLDERS until you replace them."""
-import csv, random, statistics
+import csv, os, random, statistics
 
 N = 10000                      # number of simulated years
 FX_BASE, FX_SD = 150.0, 8.0    # yen per US$ (placeholder)
 random.seed(1)
 
-rows = list(csv.DictReader(open("assumptions.csv")))
+rows = list(csv.DictReader(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "assumptions.csv"))))
 results = []
 for _ in range(N):
     fx = random.gauss(FX_BASE, FX_SD)       # ONE fx draw shared by all segments

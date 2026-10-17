@@ -1,0 +1,263 @@
+{
+  "company": "Sumitomo Forestry (1911)",
+  "unit": "million yen",
+  "profit_label": "recurring income",
+  "guidance": {
+    "revenue": 2950000,
+    "profit": 115000,
+    "net_income": 60000
+  },
+  "fx": {
+    "USDJPY": {
+      "base": 149.66,
+      "expected": 158.14,
+      "sd": 7.0
+    },
+    "AUDJPY": {
+      "base": 96.51,
+      "expected": 111.05,
+      "sd": 6.0
+    }
+  },
+  "segments": [
+    {
+      "name": "Timber & Building Materials",
+      "revenue_base": 252974,
+      "demand_beta": 0.6,
+      "volume_growth": {
+        "mean": 0.008,
+        "sd": 0.05
+      },
+      "price_growth": {
+        "mean": 0.0,
+        "sd": 0.02
+      },
+      "margin": {
+        "mean": 0.0196,
+        "sd": 0.01
+      }
+    },
+    {
+      "name": "Housing Japan",
+      "revenue_base": 542307,
+      "demand_beta": 0.6,
+      "volume_growth": {
+        "mean": 0.042,
+        "sd": 0.03
+      },
+      "price_growth": {
+        "mean": 0.037,
+        "sd": 0.01
+      },
+      "margin": {
+        "mean": 0.0589,
+        "sd": 0.01
+      }
+    },
+    {
+      "name": "US Housing (incl. Tri Pointe)",
+      "revenue_base": 786058,
+      "demand_beta": 0.8,
+      "volume_growth": {
+        "mean": 0.398,
+        "sd": 0.08
+      },
+      "price_growth": {
+        "mean": 0.061,
+        "sd": 0.03
+      },
+      "margin": {
+        "mean": 0.0824,
+        "sd": 0.02
+      },
+      "fx": {
+        "pair": "USDJPY",
+        "exposure": 1.0
+      }
+    },
+    {
+      "name": "Australia Housing",
+      "revenue_base": 337756,
+      "demand_beta": 0.6,
+      "volume_growth": {
+        "mean": 0.0915,
+        "sd": 0.06
+      },
+      "price_growth": {
+        "mean": 0.042,
+        "sd": 0.02
+      },
+      "margin": {
+        "mean": 0.0848,
+        "sd": 0.015
+      },
+      "fx": {
+        "pair": "AUDJPY",
+        "exposure": 1.0
+      }
+    },
+    {
+      "name": "Overseas other + Tri Pointe purchase costs",
+      "revenue_base": 82078,
+      "demand_beta": 0.5,
+      "volume_growth": {
+        "mean": 0.2427,
+        "sd": 0.08
+      },
+      "price_growth": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "margin": {
+        "mean": -0.402,
+        "sd": 0.06
+      }
+    },
+    {
+      "name": "Real Estate",
+      "revenue_base": 254051,
+      "demand_beta": 0.7,
+      "volume_growth": {
+        "mean": 0.2557,
+        "sd": 0.1
+      },
+      "price_growth": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "margin": {
+        "mean": -0.0455,
+        "sd": 0.04
+      }
+    },
+    {
+      "name": "Environment & Resources",
+      "revenue_base": 26763,
+      "demand_beta": 0.3,
+      "volume_growth": {
+        "mean": 0.0462,
+        "sd": 0.05
+      },
+      "price_growth": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "margin": {
+        "mean": -0.0464,
+        "sd": 0.03
+      }
+    },
+    {
+      "name": "Others",
+      "revenue_base": 28115,
+      "demand_beta": 0.3,
+      "volume_growth": {
+        "mean": 0.1026,
+        "sd": 0.05
+      },
+      "price_growth": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "margin": {
+        "mean": 0.1452,
+        "sd": 0.03
+      }
+    },
+    {
+      "name": "Adjustments (sales only)",
+      "revenue_base": -42525,
+      "demand_beta": 0.0,
+      "volume_growth": {
+        "mean": 0.0582,
+        "sd": 0.02
+      },
+      "price_growth": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "margin": {
+        "mean": 0.0,
+        "sd": 0.0
+      }
+    }
+  ],
+  "fixed_items": [
+    {
+      "name": "Adjustments (profit)",
+      "mean": -11200,
+      "sd": 2500
+    }
+  ],
+  "non_operating": {
+    "mean": 0,
+    "sd": 0
+  },
+  "one_offs": [
+    {
+      "name": "Extraordinary gains (net)",
+      "prob": 1.0,
+      "mean": 9600,
+      "sd": 3500,
+      "stage": "pre_tax"
+    }
+  ],
+  "tax_rate": {
+    "mean": 0.3,
+    "sd": 0.03
+  },
+  "minority_share": {
+    "mean": 0.31,
+    "sd": 0.04
+  },
+  "stress_tests": [
+    {
+      "name": "US demand slump",
+      "shifts": {
+        "growth": {
+          "US Housing (incl. Tri Pointe)": -0.15
+        },
+        "margin": {
+          "US Housing (incl. Tri Pointe)": -0.03
+        }
+      }
+    },
+    {
+      "name": "Yen strengthens (USD 145, AUD 98)",
+      "shifts": {
+        "fx": {
+          "USDJPY": -13.0,
+          "AUDJPY": -13.0
+        }
+      }
+    },
+    {
+      "name": "Tri Pointe weaker than plan",
+      "shifts": {
+        "growth": {
+          "US Housing (incl. Tri Pointe)": -0.08
+        },
+        "margin": {
+          "US Housing (incl. Tri Pointe)": -0.02,
+          "Overseas other + Tri Pointe purchase costs": -0.05
+        }
+      }
+    },
+    {
+      "name": "Japan housing cost squeeze",
+      "shifts": {
+        "margin": {
+          "Housing Japan": -0.015
+        }
+      }
+    },
+    {
+      "name": "Broad downturn",
+      "shifts": {
+        "all_growth": -0.04,
+        "all_margin": -0.01
+      }
+    }
+  ],
+  "notes": "STARTER. Segment bases are FY2025 actuals (Factbook); growth and margins are calibrated so the BASE median lands near the company's FY2026 forecast (so base = 'company view'). Tax and minority share are ASSUMPTIONS calibrated to the FY26F net-income ratio (not disclosed). Replace with your own views."
+}
