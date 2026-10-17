@@ -1,0 +1,6 @@
+segment,units_mean,units_sd,price_mean_million_yen,price_sd_million_yen,margin_mean,margin_sd,fx_sensitive,source_note
+Housing_Japan,10000,800,40,2,0.04,0.01,0,PLACEHOLDER - replace from Factbook
+Housing_US,12000,1500,60,4,0.08,0.02,1,PLACEHOLDER - replace from Factbook
+Housing_Australia,3000,400,45,3,0.07,0.02,1,PLACEHOLDER - replace from Factbook
+Timber_Building_Materials,1,0,300000,15000,0.03,0.008,0,PLACEHOLDER - replace from Factbook
+Environment_Resources,1,0,50000,5000,0.05,0.01,0,PLACEHOLDER - replace from Factbook
