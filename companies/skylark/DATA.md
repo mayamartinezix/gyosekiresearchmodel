@@ -69,3 +69,9 @@ Pattern: the company beat even its raised forecast. FY26 has also been raised on
 - Q3 FY25 / raised forecast: https://filingreader.com/news-wire/tokyo/2025-11-13/skylark-holdings-reports-strong-q3-growth-upgrades-full-year-forecast
 - Segment page: https://envalith.com/en/companies/3197/segments
 - Skylark English IR (did not load for me): https://www.skylark.co.jp/en/ir/
+
+## 4. Added alt data: job postings (Aug-Oct plan)
+- Why: Skylark's profit is sensitive to wages and staffing. Posted hourly wages and the number of open jobs show wage pressure early.
+- What to record: average posted hourly wage and number of postings for Skylark brands, by month, from a public job site.
+- Limit: no free history exists. Start saving a snapshot every week now. It can only be used going forward, not backtested on the past.
+- Check the job site's terms before using any automated collection. Do it by hand if unsure.
