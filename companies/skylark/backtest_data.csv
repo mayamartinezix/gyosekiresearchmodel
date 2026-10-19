@@ -1,2 +1,2 @@
-period,actual,baseline,same_store_sales_monthly_avg,wage_index_chg,food_cost_chg,tourist_arrivals_chg,weather_index,job_posting_wage_chg
-FY25,30000,25000,,,,,,
+period,actual,baseline,skylark_monthly_sss,jf_industry_sales_yoy,job_posting_wage_chg,food_price_chg,min_wage_chg,tourist_arrivals_chg,weather_index,review_score_chg
+FY25,30000,25000,,,,,,,,

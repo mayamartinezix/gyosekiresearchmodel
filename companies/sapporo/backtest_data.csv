@@ -1,2 +1,2 @@
-period,actual,baseline,summer_temp_vs_normal,beer_shipments_yoy,price_revision_dummy,usdjpy_chg
-FY25,25.0,,,,,
+period,actual,baseline,beer_shipments_yoy,summer_temp_vs_normal,aluminum_price_chg,barley_price_chg,energy_price_chg,rival_results_chg,trends_beer_chg,usdjpy_chg
+FY25,25.0,,,,,,,,,

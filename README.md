@@ -3,6 +3,7 @@
 **Status:** Phase 1 = general framework for all three companies. The Sumitomo deep dive is PAUSED (not deleted): see `companies/sumitomo/`.
 
 ## Where things are
+- `ALT_DATA.md` - master list of alt data per company (what, where, frequency, history).
 - `OVERVIEW.md` - standing of each company, what can move it, what to test.
 - `TODO.md` - current plan.
 - `EVALUATE.md` - what to evaluate and how.
