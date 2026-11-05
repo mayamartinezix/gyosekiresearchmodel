@@ -1,17 +1,32 @@
 # TODO (Phase 1: general model for all 3 companies)
 Sumitomo-only list is saved in `companies/sumitomo/TODO.md` (paused).
 
-## Key dates (updated Nov 5, 2026 from your Gyoseki deliverables page)
-| Date | What |
+## Key dates (CONFIRMED from the official rules v2, last updated Oct 28, 2026)
+| Date (JST) | What |
 |---|---|
-| Nov 5, 3:30pm JST | Sumitomo Q3 results (update numbers) |
-| Nov 25, 23:59 JST | Midterm Part 1: identify the key business drivers |
-| Dec 16, 23:59 JST | Midterm Part 2: collect P&L model data |
-| Jan 3, 2027, 23:59 JST | Main: Part 1 forecast operating income + net income for ALL 3 companies = (a) current FY2026 results and (b) NEXT FY (FY2027) company GUIDANCE. Part 2: pick one company; report (max 2,500 English words), model with P&L summary sheet, video under 3 min |
-Note: older dates in this file (Nov 4 and Dec 9) came from an earlier read of the rules PDF and are replaced. Confirm the dates in the Gyoseki system.
-Midterm results do not count toward the final score, but may be used to pick participants at the study-group venue.
+| Nov 5, 3:30pm | Sumitomo Q3 results (update numbers) |
+| Nov 11, 5:00pm | Workshop: Case Study with Fortress (hybrid) |
+| Nov 25, 23:59 | Midterm Part 1 due: identify the key business drivers |
+| Nov 25, 5:00pm | Workshop: Quantitative basics with Pronexus (online) |
+| Dec 2, 5:00pm | Workshop: Communication with BlackRock (online) |
+| Dec 3, 6:00pm | Workshop: Industry Map with Toyo Keizai (hybrid) |
+| Dec 9, 5:00pm | Workshop: Alternative data with Nowcast (online) |
+| Dec 11, 5:00pm | Workshop: Stock study with UBS (hybrid) |
+| Dec 16, 23:59 | Midterm Part 2 due: collect P&L model data |
+| Dec 16, 6:00pm | Workshop: Advanced quantitative / wrap-up (online) |
+| Jan 3, 2027, 23:59 | Main submission |
+| Mid-Feb / late Feb | Qualifying results / finalists announced |
+| Mar 5 -> Mar 7 | Wildcard submission -> results |
+| Mar 12 (Fri) | Final, in person |
 
-IMPORTANT CHANGE: Part 1 asks for next year's company GUIDANCE (announced around Feb 2027), not next year's actual results. So you must also model HOW each company sets guidance (cautious or bold). Use the guidance-vs-actual history in each DATA.md.
+Already passed: Oct 28 qualitative workshop (Saizeriya) and Nov 4 Point72 workshop. The old Nov 4 and Dec 9 task dates are gone (they were in the older Aug 20 rules).
+Midterm tasks are considered for the interim selection (past finalists exempt).
+
+## What the Jan 3 main submission asks
+- Part 1: forecast operating income and net income for ALL 3 companies: this year's (FY2026) results AND next year's (FY2027) company GUIDANCE.
+- Part 2: pick one company. Report (max 2,500 English words), financial model with P&L summary sheet, video under 3 minutes.
+- Report scoring (earnings forecast = 40%): key revenue drivers, assumptions backed by data, a forecast of the company's INITIAL FY2027 guidance, and how you differ from guidance and consensus.
+- So you must model HOW each company sets guidance (cautious or bold). Use the guidance-vs-actual history in each DATA.md.
 
 ## Step 1 - Check the starter model (this week)
 - [ ] Run all three configs. Read each `notes` line; it says which inputs are guesses.
