@@ -1,15 +1,17 @@
 # TODO (Phase 1: general model for all 3 companies)
 Sumitomo-only list is saved in `companies/sumitomo/TODO.md` (paused).
 
-## Key dates
+## Key dates (updated Nov 5, 2026 from your Gyoseki deliverables page)
 | Date | What |
 |---|---|
-| Oct 28 | Interim task details |
-| Nov 4 | Task 1 due: key business drivers (all companies? check the rules text) |
-| Nov 5, 3:30pm JST | Sumitomo Q3 results |
-| Nov 25, 23:59 | Interim task due (500 chars) |
-| Dec 9 | Task 2: P&L model data |
-| Jan 3, 2027, 23:59 | Main submission (Part 1: all 3 forecasts) |
+| Nov 5, 3:30pm JST | Sumitomo Q3 results (update numbers) |
+| Nov 25, 23:59 JST | Midterm Part 1: identify the key business drivers |
+| Dec 16, 23:59 JST | Midterm Part 2: collect P&L model data |
+| Jan 3, 2027, 23:59 JST | Main: Part 1 forecast operating income + net income for ALL 3 companies = (a) current FY2026 results and (b) NEXT FY (FY2027) company GUIDANCE. Part 2: pick one company; report (max 2,500 English words), model with P&L summary sheet, video under 3 min |
+Note: older dates in this file (Nov 4 and Dec 9) came from an earlier read of the rules PDF and are replaced. Confirm the dates in the Gyoseki system.
+Midterm results do not count toward the final score, but may be used to pick participants at the study-group venue.
+
+IMPORTANT CHANGE: Part 1 asks for next year's company GUIDANCE (announced around Feb 2027), not next year's actual results. So you must also model HOW each company sets guidance (cautious or bold). Use the guidance-vs-actual history in each DATA.md.
 
 ## Step 1 - Check the starter model (this week)
 - [ ] Run all three configs. Read each `notes` line; it says which inputs are guesses.
