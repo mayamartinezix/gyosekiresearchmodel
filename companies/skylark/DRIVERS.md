@@ -17,12 +17,17 @@ Keep the same 5 sections every time.
 - Medium-term: same-store growth 3-4% a year (third-party summary, verify)
 
 ## 4. Implicit KPIs (indicators I add, from ALT_DATA.md)
-Format: indicator - why it should move a driver - source - how often - history?
-- Skylark monthly sales and customers - early read on quarterly profit - company releases - monthly - yes
-- Industry family-restaurant sales (JF) - market vs company - JF - monthly - yes
-- Job postings: hourly wage and openings - wage pressure - job sites - weekly - no (start now)
-- Rice/beef/oil prices - food cost - MAFF - monthly - yes
-- Minimum wage - labor cost - MHLW - yearly - yes
+Lag and noise are my first guesses. Confirm them with `framework/backtest.py`, then keep the best 1-2.
+Lag = how early it moves before the company's results. Noise = how much it jumps around for reasons unrelated to the company.
+
+| Indicator | Why it matters (one line) | Source | How often | History? | Lag / lead | Noise | Pro | Con |
+|---|---|---|---|---|---|---|---|---|
+| Skylark monthly sales and customers | Early read on quarterly results | Company releases | monthly | Yes | Leads results by 0-3 months | Low | Direct and company-specific | Already public, so others use it too |
+| Industry family-restaurant sales (JF) | Shows whether Skylark beats the market | JF | monthly | Yes | Coincident | Low | Clean benchmark | Industry, not company |
+| Job postings: wage and openings | Early sign of wage cost pressure | Public job sites | weekly | No (start now) | Leads costs by 1-6 months | High | Unusual, forward-looking | No history; site terms to check |
+| Rice/beef/oil prices | Food cost pressure | MAFF / e-Stat | monthly | Yes | Leads costs by 1-3 months | Medium | Official, long history | Company contracts delay the effect |
+| Minimum wage | Labor cost step-up | MHLW | yearly | Yes | Known in advance | Low | Predictable | Only one data point a year |
+| Photo log: menu prices, queues | Price changes and traffic | You | weekly | No | Coincident | High | Original, visible | Small sample; no history |
 
 ## 5. Pros / advantages and cons / roadblocks
 Pros:

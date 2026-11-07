@@ -19,12 +19,17 @@ Keep the same 5 sections every time.
 - Targets: 1M hectares of forest, 1M m3 of Japanese timber by 2030
 
 ## 4. Implicit KPIs (indicators I add, from ALT_DATA.md)
-Format: indicator - why it should move a driver - source - how often - history?
-- US 30-year mortgage rate - changes US home demand and incentives - FRED - weekly - yes
-- Japan monthly orders and backlog - leads next quarters' sales - company IR - monthly - yes
-- Lumber price - material cost and timber profit - futures - daily - yes
-- USD/JPY, AUD/JPY - translates overseas profit into yen - FRED - daily - yes
-- Peer US builders' orders and cancellations - early read on US demand - peers' IR - quarterly - yes
+Lag and noise are my first guesses. Confirm them with `framework/backtest.py`, then keep the best 1-2.
+Lag = how early it moves before the company's results. Noise = how much it jumps around for reasons unrelated to the company.
+
+| Indicator | Why it matters (one line) | Source | How often | History? | Lag / lead | Noise | Pro | Con |
+|---|---|---|---|---|---|---|---|---|
+| US 30-year mortgage rate | Higher rate = fewer US buyers, more incentives | FRED (Freddie Mac) | weekly | Yes | Leads US orders by 1-3 months | Low | Easy, clean, long history | Only one side of demand |
+| Japan monthly orders and backlog | Orders today become sales in 6-12 months | Sumitomo Forestry IR | monthly | Yes | Leads Japan sales by 6-12 months | Low | Direct, company-specific | Japan is a smaller profit share |
+| Lumber price | Moves material cost and timber profit | Futures (Trading Economics) | daily | Yes | Coincident to 3-month lead | Medium | Daily, long history | Company hedging/contracts blur the link |
+| USD/JPY, AUD/JPY | Converts overseas profit into yen | FRED / BOJ | daily | Yes | Coincident | Medium | Directly in the numbers | Hard to forecast itself |
+| Peer US builders' orders and cancellations | Early read on US demand and pricing | Peers' IR pages | quarterly | Yes | Leads by 0-1 quarter | Medium | Same market | Only a few data points a year |
+| Family photo log (US communities) | Sold signs, incentives, traffic | Family | every 2 weeks | No | Coincident | High | Real-time, original | No history; small sample |
 
 ## 5. Pros / advantages and cons / roadblocks
 Pros:

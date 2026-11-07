@@ -17,12 +17,17 @@ Keep the same 5 sections every time.
 - Restructuring (US, Stone brand transfer), Carlsberg partnership
 
 ## 4. Implicit KPIs (indicators I add, from ALT_DATA.md)
-Format: indicator - why it should move a driver - source - how often - history?
-- Industry beer shipments - domestic demand - Brewers Association - monthly - yes
-- Summer temperature vs normal - beer demand - JMA - daily - yes
-- Aluminum price - can cost - LME/FRED - daily - yes
-- Barley price and energy - input cost - trade/METI stats - monthly - yes
-- Rival results (Asahi, Kirin) - market read - IR - quarterly - yes
+Lag and noise are my first guesses. Confirm them with `framework/backtest.py`, then keep the best 1-2.
+Lag = how early it moves before the company's results. Noise = how much it jumps around for reasons unrelated to the company.
+
+| Indicator | Why it matters (one line) | Source | How often | History? | Lag / lead | Noise | Pro | Con |
+|---|---|---|---|---|---|---|---|---|
+| Industry beer shipments | Domestic demand | Japan Brewers Association | monthly | Yes | Coincident to 1 month lead | Low | Clean, official | Industry, not Sapporo only |
+| Summer temperature vs normal | Hot summers lift beer sales | JMA | daily | Yes | Coincident | Medium | Free, long history | Only matters for summer months |
+| Aluminum price | Can cost | LME / FRED | daily | Yes | Leads costs by 1-6 months | Medium | Clear cost driver | Contracts and hedges delay it |
+| Barley and energy prices | Input cost | Trade stats, METI | monthly | Yes | Leads costs by 1-6 months | Medium | Official | Weak link to profit |
+| Rival results (Asahi, Kirin) | Market read | Their IR pages | quarterly | Yes | Coincident | Medium | Same market | Rivals' one-offs distort it |
+| Photo log: shelf share, price tags | Share and pricing | You | weekly | No | Coincident | High | Original | No history; small sample |
 
 ## 5. Pros / advantages and cons / roadblocks
 Pros:
